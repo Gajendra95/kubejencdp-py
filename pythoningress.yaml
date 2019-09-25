@@ -11,11 +11,11 @@ spec:
 kind: Ingress
 metadata:
   labels:
-    app: __APP_NAME__
+    app: pythondzone
     updateTimestamp: "__TIMESTAMP__"
-  name: __APP_NAME__-ingress
+  name: pythondzone-ingress
 spec:
   backend:
-    serviceName: __APP_NAME__-svc
+    serviceName: pythondzone-svc
     servicePort: http-port-svc
     servicePort: http-port
