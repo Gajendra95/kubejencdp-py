@@ -3,7 +3,6 @@ kind: Service
 metadata:
   labels:
     app: pythondzone
-    updateTimestamp: "__TIMESTAMP__"
   name: pythondzone-svc
 spec:
   ports:
