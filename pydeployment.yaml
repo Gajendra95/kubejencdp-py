@@ -9,16 +9,11 @@ spec:
   template:
     metadata:
       labels:
-        app: pythondzone
-        updateTimestamp: "__TIMESTAMP__"
+        app: pythondzone     
     spec:
       containers:
       - name: pythondzone-ctr
-        image: >-
-          __IMAGE__
-        env:
-        - name: DEPLOY_TIMESTAMP
-          value: "__TIMESTAMP__"
+        image: sreedocker123/pythondzone:latest   
         imagePullPolicy: Always
         ports:
         - name: http-port
