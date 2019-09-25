@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pythondzone-dc
+  labels:
+    app: pythondzone
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pythondzone
+        updateTimestamp: "__TIMESTAMP__"
+    spec:
+      containers:
+      - name: pythondzone-ctr
+        image: >-
+          __IMAGE__
+        env:
+        - name: DEPLOY_TIMESTAMP
+          value: "__TIMESTAMP__"
+        imagePullPolicy: Always
+        ports:
+        - name: http-port
+          containerPort: 8000
