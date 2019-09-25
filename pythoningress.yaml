@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   labels:
     app: pythondzone
-    updateTimestamp: "__TIMESTAMP__"
   name: pythondzone-ingress
 spec:
   backend:
