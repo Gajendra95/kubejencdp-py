@@ -7,15 +7,5 @@ metadata:
   name: pythondzone-ingress
 spec:
   backend:
-    serviceName: pythondzoneapiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  labels:
-    app: pythondzone
-    updateTimestamp: "__TIMESTAMP__"
-  name: pythondzone-ingress
-spec:
-  backend:
-    serviceName: pythondzone-svc
-    servicePort: http-port-svc
+    serviceName: pythondzone
     servicePort: http-port
